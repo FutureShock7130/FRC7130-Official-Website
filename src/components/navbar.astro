@@ -1,0 +1,72 @@
+---
+import LogoImg from "../assets/logo.png";
+---
+
+<div class="navbar">
+  <div class="logo">
+    <img src={LogoImg.src} alt="FRC 7130 Logo" />
+  </div>
+  <div class="linkbar">
+    <a class="link" href="#about">about</a>
+    <a class="link" href="#award">award</a>
+    <a class="link" href="#sponsor">sponsor</a>
+    <a class="button" href="/Donate">Donate</a>
+  </div>
+</div>
+
+<style lang="scss">
+  .navbar {
+    width: 100svw;
+    padding: 10px 25px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #303030;
+
+    .logo > img {
+      max-height: 50px;
+    }
+
+    .linkbar {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 24px;
+      & > .link {
+        color: #a7a7a7;
+        font-size: 1em;
+        text-transform: uppercase;
+        font-family: K2D;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        text-decoration: none;
+        transition: color 0.2s;
+
+        &:hover {
+          color: #fff;
+        }
+      }
+    }
+
+    a.button {
+      color: #fff;
+      font-weight: 200;
+      font-size: 16px;
+      line-height: 24px;
+      text-decoration: none;
+      padding: 2px 25px 5px 25px;
+      border-radius: 5px;
+      background-color: #006686;
+      border: 1px solid #006686;
+      transition: all 0.2s ease-out;
+
+      &:hover {
+        background-color: transparent;
+        color: #006686;
+      }
+    }
+  }
+</style>
