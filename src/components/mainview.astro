@@ -1,0 +1,65 @@
+---
+import LogoImg from "../assets/logo.png";
+---
+
+<div class="mainview">
+  <div class="block">
+    <div class="logo">
+      <img src={LogoImg.src} alt="FRC 7130 Future Shock Logo" />
+    </div>
+    <div class="title">
+      <div class="name">TEAM <span>7130</span> / Future Shock</div>
+      <div class="slogan">A FRC Team from Mingdao H.S., Taiwan.</div>
+    </div>
+  </div>
+</div>
+
+<style lang="scss">
+  .mainview {
+    height: calc(100vh - 74px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .block {
+      max-width: 800px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 30px;
+      background: radial-gradient(
+        52.89% 52.89% at 50% 50%,
+        rgba(0, 102, 134, 0.17) 0%,
+        rgba(0, 102, 134, 0) 100%
+      );
+
+      .logo img {
+        max-width: 300px;
+      }
+
+      .title {
+        .name {
+          color: #fff;
+          font-size: 36px;
+          font-family: K2D;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+
+          & > span {
+            color: #006686;
+          }
+        }
+
+        .slogan {
+          color: #a7a7a7;
+          font-size: 16px;
+          font-family: K2D;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+        }
+      }
+    }
+  }
+</style>
