@@ -1,0 +1,35 @@
+---
+import Card from "./award/Card.astro";
+---
+
+<div class="award">
+  <div class="list">
+    <Card />
+    <Card />
+    <Card />
+    <Card />
+    <Card />
+    <Card />
+    <Card />
+    <Card />
+    <Card />
+  </div>
+</div>
+
+<style lang="scss">
+  .award {
+    padding: 150px 30px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .list {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 50px;
+    }
+  }
+</style>
