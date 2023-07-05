@@ -4,10 +4,16 @@
 </div>
 
 <style lang="scss">
+  @import "../../scss/rwd.scss";
+
   .card {
     background-color: #303030;
-    padding: 10px 20px;
+    padding: 20px 50px;
     border-radius: 5px;
+
+    @include mobile {
+      min-width: 80svw;
+    }
 
     h3 {
       font-size: 2rem;

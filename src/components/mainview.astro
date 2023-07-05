@@ -15,11 +15,13 @@ import LogoImg from "../assets/logo.png";
 </div>
 
 <style lang="scss">
+  @import "../scss/rwd.scss";
   .mainview {
     height: calc(100vh - 74px);
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 0 15px;
 
     .block {
       max-width: 800px;
@@ -32,6 +34,10 @@ import LogoImg from "../assets/logo.png";
         rgba(0, 102, 134, 0.17) 0%,
         rgba(0, 102, 134, 0) 100%
       );
+
+      @include mobile {
+        flex-direction: column;
+      }
 
       .logo img {
         max-width: 300px;
@@ -58,6 +64,10 @@ import LogoImg from "../assets/logo.png";
           font-style: normal;
           font-weight: 500;
           line-height: normal;
+        }
+
+        @include mobile {
+          text-align: center;
         }
       }
     }
